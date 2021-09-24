@@ -37,6 +37,11 @@ namespace DemoLibrary
 
         public static List<string> ConvertModelsToCSV(List<PersonModel> people)
         {
+            return SerializePeopleToAList(people);
+        }
+
+        public static List<string> SerializePeopleToAList(List<PersonModel> people)
+        {
             List<string> output = new List<string>();
 
             foreach (PersonModel user in people)
